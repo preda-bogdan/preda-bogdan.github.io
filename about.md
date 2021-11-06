@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: /whois - about me
+permalink: /me/
 ---
 
 So here I will add some more info about me :P
