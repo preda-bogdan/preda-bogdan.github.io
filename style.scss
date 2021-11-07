@@ -180,7 +180,13 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 50% 50% 50% 5%;
+    filter: hue-rotate(-10deg);
+    filter: contrast(95%);
+    padding: 2px;
+    background-image: linear-gradient($carmineRed, $blackGrape), linear-gradient(to right, $carmineRed, $cyan);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
   }
 }
 
@@ -200,14 +206,14 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 2em;
+  letter-spacing: .15em;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: .9em;
 
   @include mobile {
     margin: 3px 0;
