@@ -1,6 +1,5 @@
 <nav>
-    <a href="{{ site.baseurl }}/">/blog</a>
-    <a href="{{ site.baseurl }}/me">/whois</a>
-    <a href="{{ site.baseurl }}/code">/code</a>
-    <a href="{{ site.baseurl }}/cook">/cook</a>
+    {% for item in site.data.navigation %}
+        <a href="{{- item.url | relative_url -}}/">{{ item.title }}</a>
+    {% endfor %}
 </nav>

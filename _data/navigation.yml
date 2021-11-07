@@ -1,0 +1,11 @@
+- title: /blog
+  url: ''
+
+- title: /whois
+  url: '/me'
+
+- title: /code
+  url: '/code'
+
+- title: /cook
+  url: '/cook'
