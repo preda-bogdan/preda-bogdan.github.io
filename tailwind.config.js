@@ -5,7 +5,17 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      animation: {        
+        'cursor-blink': '1s blink step-end infinite',      
+      },
+      keyframes: {        
+        blink: {          
+          '0%, 100%': { color: 'transparent' },          
+          '50%': { color: 'inherit' },        
+        }      
+      }
+    },
   },
   plugins: [],
 }

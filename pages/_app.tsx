@@ -4,6 +4,7 @@ import { classNames } from "../common/utils";
 
 import DocumentHead from "../components/DocumentHead";
 import ThemeContext from "../components/helpers/ThemeContext";
+import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
 import type { AppProps } from 'next/app'
@@ -32,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <DocumentHead />
       <div
         className={classNames(
-          "wrap flex flex-col h-full",
+          "wrap flex flex-col h-full ",
           isDarkMode ? "dark" : ""
         )}
       >
@@ -42,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               toggle: toggleDarkMode,
             }}
           >
-            {/* <Header /> */}
+            <Header />
         </ThemeContext.Provider>
         <Component {...pageProps} />
         <Footer />

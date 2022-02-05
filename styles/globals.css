@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --main-bg-color-light: rgb(248 250 252);
+    --main-dot-color-light: rgb(148 163 184);
+    --main-bg-color-dark: rgb(30 41 59);
+    --main-dot-color-dark: rgb(71 85 105);
+
+    --main-dot-size: 1px;
+    --main-dot-space: 22px;
+}
+
+.dark .background-dots {
+	background:
+		linear-gradient(90deg, var(--main-bg-color-dark) calc(var(--main-dot-space) - var(--main-dot-size)), transparent 1%) center,
+		linear-gradient(var(--main-bg-color-dark) calc(var(--main-dot-space) - var(--main-dot-size)), transparent 1%) center,
+		var(--main-dot-color-dark);
+	background-size: var(--main-dot-space) var(--main-dot-space);
+}
+
+.background-dots {
+	background:
+		linear-gradient(90deg, var(--main-bg-color-light) calc(var(--main-dot-space) - var(--main-dot-size)), transparent 1%) center,
+		linear-gradient(var(--main-bg-color-light) calc(var(--main-dot-space) - var(--main-dot-size)), transparent 1%) center,
+		var(--main-dot-color-light);
+	background-size: var(--main-dot-space) var(--main-dot-space);
+}
+
 html, body, #__next {
     height: 100%;
 }

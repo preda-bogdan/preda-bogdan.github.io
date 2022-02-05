@@ -4,7 +4,7 @@ import { socialAccounts } from "../../data/SocialAccounts";
 
 export default function Footer() {
   return (
-    <footer className="bg-white bg-gray-900 mt-auto">
+    <footer className="bg-slate-100 dark:bg-gray-900 mt-auto">
         <div className="mx-auto max-w-md py-8 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         
             <div className="mt-6 flex justify-center space-x-6 text-gray-400">
